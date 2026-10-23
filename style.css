@@ -170,7 +170,6 @@ a {
     transform: translateY(-3px);
 }
 
-/* ===== NOVO: seção de destaques ===== */
 .destaques {
     padding: 25px;
     background: var(--branco);
@@ -227,7 +226,6 @@ a {
     font-size: 1rem;
 }
 
-/* ===== NOVO: seção de chamada para ação ===== */
 .chamada {
     display: flex;
     flex-direction: column;
@@ -273,7 +271,6 @@ a {
     outline-offset: 3px;
 }
 
-/* ===== NOVO: seção de localização ===== */
 .localizacao {
     padding: 25px;
     background: var(--cinza-claro);

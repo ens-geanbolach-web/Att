@@ -332,6 +332,70 @@ a {
     color: var(--laranja);
 }
 
+.faq {
+    padding: 25px;
+    background: var(--branco);
+    border: 2px solid var(--cinza-claro);
+    border-radius: 12px;
+}
+.faq-titulo {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--preto);
+}
+.faq-titulo i {
+    color: var(--laranja);
+}
+.faq-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.faq-item {
+    background: var(--cinza-claro);
+    border-left: 4px solid var(--laranja);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.faq-item summary {
+    padding: 16px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    color: var(--preto);
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+.faq-item summary:hover {
+    background: var(--laranja);
+    color: var(--branco);
+}
+.faq-item summary:focus-visible {
+    outline: 3px solid var(--laranja);
+    outline-offset: -3px;
+}
+.faq-item[open] summary {
+    background: var(--preto);
+    color: var(--laranja);
+}
+.faq-item p {
+    padding: 16px 20px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+.faq-fonte {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.faq-fonte a {
+    color: var(--laranja-escuro);
+    text-decoration: underline;
+}
+
 .rodape {
     display: flex;
     justify-content: space-around;
@@ -440,6 +504,15 @@ a {
     .localizacao-info p {
         font-size: 0.95rem;
     }
+    .faq-titulo {
+        font-size: 1.5rem;
+    }
+    .faq-item summary {
+        font-size: 1rem;
+    }
+    .faq-item p {
+        font-size: 1rem;
+    }
     .rodape {
         text-align: center;
     }
@@ -509,6 +582,23 @@ a {
     }
     .localizacao-info {
         padding: 18px;
+    }
+    .faq {
+        padding: 16px;
+    }
+    .faq-titulo {
+        font-size: 1.25rem;
+    }
+    .faq-item summary {
+        padding: 14px 16px;
+        font-size: 1rem;
+    }
+    .faq-item p {
+        padding: 14px 16px;
+        font-size: 1rem;
+    }
+    .faq-fonte {
+        font-size: 0.85rem;
     }
     .rodape {
         flex-direction: column;
